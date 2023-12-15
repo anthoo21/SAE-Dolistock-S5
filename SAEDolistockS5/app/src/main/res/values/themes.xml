@@ -10,8 +10,8 @@
     <style name="StyleBouton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">64dp</item>
-        <!-- <item name="android:background">@drawable/base_bouton</item> -->
-        <item name="android:background">@color/primary_blue</item>
+<!--        <item name="android:background">@drawable/base_bouton</item>-->
+        <item name="android:backgroundTint">@color/primary_blue</item>
         <item name="android:layout_marginTop">@dimen/marge_15</item>
         <item name="android:layout_marginLeft">@dimen/marge_droite_btn</item>
         <item name="android:layout_marginRight">@dimen/marge_droite_btn</item>
@@ -20,18 +20,38 @@
         <item name="android:textSize">@dimen/taille_txt_btn</item>
     </style>
 
+    <style name="StyleEditText">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/custom_edit_text</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">@dimen/marge_15</item>
+        <item name="android:layout_marginLeft">@dimen/marge_droite_btn</item>
+        <item name="android:layout_marginRight">@dimen/marge_droite_btn</item>
+<!--        <item name="android:elevation">@dimen/effet</item>-->
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/taille_txt_btn</item>
+    </style>
+
     <style name="page_title">
         <item name="android:layout_marginLeft">@dimen/marge_5</item>
-        <item name="android:textSize">26sp</item>
+        <item name="android:textSize">@dimen/taille_titre</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="page_sub_title">
         <item name="android:layout_marginLeft">@dimen/marge_5</item>
-        <item name="android:textSize">@dimen/taille_txt_btn</item>
+        <item name="android:textSize">@dimen/taille_sous_titre</item>
         <item name="android:gravity">left</item>
-        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="libelle">
+        <item name="android:layout_marginLeft">@dimen/marge_5</item>
+        <item name="android:textSize">@dimen/taille_texte</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/dark_grey</item>
     </style>
 
     <style name="Theme.SAEDolistockS5" parent="Base.Theme.SAEDolistockS5" />

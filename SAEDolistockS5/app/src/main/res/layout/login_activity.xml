@@ -1,10 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!--  Entête de la page  -->
+        <TextView
+            android:id="@+id/titreCo"
+            android:textAppearance="@style/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marge_5"
+            android:layout_marginLeft="@dimen/marge_5"
+            android:textStyle="bold"
+            android:text="@string/titre_co"/>
+
+        <TextView
+            android:textAppearance="@style/page_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marge_5"
+            android:layout_below ="@id/titreCo"
+            android:text="@string/sous_titre_data"/>
+
+        <LinearLayout android:id="@+id/LinearLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titreCo"
+            android:layout_marginTop="@dimen/marge_8"
+            android:gravity="right">
+
+        <Button
+            android:id="@+id/btnRetour"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="@dimen/marge_15"
+            android:background="@drawable/retour"
+            android:onClick="onClickRetour"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/hauteur_image_mini"
+            android:layout_marginLeft="@dimen/marge_5"
+            android:layout_toRightOf="@id/btnRetour"
+            android:layout_marginRight="@dimen/marge_5"
+            android:contentDescription="@string/description_image"
+            android:elevation="@dimen/effet"
+            android:src="@drawable/logo"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--  Formulaire de connexion  -->
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connexion ici"
-        ></TextView>
+        android:layout_marginLeft="@dimen/marge_5"
+        android:text="@string/label_api" />
+
+    <EditText
+        style="@style/StyleEditText"
+        android:id="@+id/champsURL"
+        android:layout_width="match_parent"
+        android:hint="@string/info_api"
+        android:inputType="textUri"/>
+<!--        android:textAlignment=""-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marge_5"
+        android:text="@string/label_login" />
+
+    <EditText
+        style="@style/StyleEditText"
+        android:id="@+id/champsLogin"
+        android:layout_width="match_parent"
+        android:hint="@string/info_login"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marge_5"
+        android:text="@string/label_mdp"/>
+
+    <EditText
+        style="@style/StyleEditText"
+        android:id="@+id/champsMdp"
+        android:layout_width="match_parent"
+        android:hint="@string/info_mdp"
+        android:inputType="textPassword"/>
+
+    <Button
+        style="@style/StyleBouton"
+        android:layout_marginTop="60dp"
+        android:id="@+id/btnModeDeco"
+        android:text="@string/libelle_co"
+        android:onClick="onClickConnexion"/>
+
+    <LinearLayout android:id="@+id/LinearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/info_mdp_co"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/marge_5"/>
+
+    </LinearLayout>
+
 </LinearLayout>

@@ -4,9 +4,11 @@
 <resources>
     <!--  tailles du logo  -->
     <dimen name="hauteur_image">200dp</dimen>
+    <dimen name="hauteur_image_mini">50dp</dimen>
 
     <!--   marges diverses  -->
     <dimen name="marge_15">15dp</dimen>
+    <dimen name="marge_10">10dp</dimen>
     <dimen name="marge_8">8dp</dimen>
     <dimen name="marge_5">5dp</dimen>
     <dimen name="marge_droite_btn">24dp</dimen>
@@ -15,10 +17,11 @@
     <dimen name="effet">4dp</dimen>
 
     <!--   taille du texte -->
-    <dimen name="taille_titre">14sp</dimen>
-    <dimen name="taille_txt_btn">16sp</dimen>
+    <dimen name="taille_titre">26sp</dimen>
+    <dimen name="taille_sous_titre">16sp</dimen>
+    <dimen name="taille_txt_btn">14sp</dimen>
     <!--   taille du texte ordinaire : libellé des zones de saisie  -->
-    <dimen name="taille_texte">13sp</dimen>
+    <dimen name="taille_texte">15sp</dimen>
 
     <!--   padding pour les boutons radio et les boutons de validation -->
     <dimen name="padding_gauche">5dp</dimen>
